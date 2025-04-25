@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'email-platform'
+    static_configs:
+      - targets: ['email-sender:5001']
